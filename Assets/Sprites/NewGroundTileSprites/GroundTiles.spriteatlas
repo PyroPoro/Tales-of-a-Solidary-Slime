@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GroundTiles
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+    - {fileID: 2800000, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+    - {fileID: 2800000, guid: 4b505ac0d513bc24c9bd9e81e7a56575, type: 3}
+    - {fileID: 2800000, guid: 361a8f376dab4e04ca36ce8fbfdb4343, type: 3}
+    - {fileID: 2800000, guid: e0edbd060a1c75a449c5e7d1adb812af, type: 3}
+    totalSpriteSurfaceArea: 37888
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 4b505ac0d513bc24c9bd9e81e7a56575, type: 3}
+  - {fileID: -4907004603713522400, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+  - {fileID: 8286888933405143921, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+  - {fileID: -5561677346548116204, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+  - {fileID: 4934006838057234059, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+  - {fileID: -2094386195527991096, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+  - {fileID: 8132797730976969298, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+  - {fileID: -1138137285999796893, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+  - {fileID: 6412905030747109919, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+  - {fileID: -3709441165779244379, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+  - {fileID: 5015909865986748899, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+  - {fileID: 3337650488019329356, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+  - {fileID: 21300000, guid: e0edbd060a1c75a449c5e7d1adb812af, type: 3}
+  - {fileID: 21300000, guid: 361a8f376dab4e04ca36ce8fbfdb4343, type: 3}
+  - {fileID: 4718298912984582019, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: 8366004501690143377, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: 4230181384192794489, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: -8611384965415578854, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: 3833358847974764590, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: -1102783194615689919, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: -2098765567983318407, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: -7614155460607596793, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: -9026947843926541331, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: 1848141676218209554, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: -937297252257873417, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: -8249366509605111322, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: 8584108449108419463, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: -7966851374141251545, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - rock_1
+  - stone_path_spritesheet_10
+  - stone_path_spritesheet_0
+  - stone_path_spritesheet_1
+  - stone_path_spritesheet_2
+  - stone_path_spritesheet_3
+  - stone_path_spritesheet_4
+  - stone_path_spritesheet_5
+  - stone_path_spritesheet_6
+  - stone_path_spritesheet_7
+  - stone_path_spritesheet_8
+  - stone_path_spritesheet_9
+  - rock_3
+  - rock_2
+  - grass_spritesheet_9
+  - grass_spritesheet_8
+  - grass_spritesheet_7
+  - grass_spritesheet_6
+  - grass_spritesheet_5
+  - grass_spritesheet_4
+  - grass_spritesheet_3
+  - grass_spritesheet_2
+  - grass_spritesheet_1
+  - grass_spritesheet_0
+  - grass_spritesheet_12
+  - grass_spritesheet_13
+  - grass_spritesheet_10
+  - grass_spritesheet_11
+  m_Tag: GroundTiles
+  m_IsVariant: 0
