@@ -8,7 +8,7 @@ public class TestEnemy : EnemyMovement
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        ContactDamage = 10f;
+        ContactDamage = 5f;
         moveSpeed = 1f;
         kbPower = 5f;
     }

@@ -9,10 +9,12 @@ public class PlayerMove : MonoBehaviour
     private Vector2 movement;
     public bool facingRight;
     private bool isAttacking;
+    public float pickupRange;
     // Start is called before the first frame update
     void Start()
     {
         facingRight = true;
+        pickupRange = 2;
     }
 
     // Update is called once per frame
@@ -31,9 +33,26 @@ public class PlayerMove : MonoBehaviour
                 facingRight = true;
             }
         }
+        pickUpXp();
 
     }
     void FixedUpdate(){
         rb.velocity = movement.normalized * moveSpeed;
+    }
+
+    void pickUpXp(){
+        Collider2D[] cols = Physics2D.OverlapBoxAll(transform.position, new Vector2(1,1)*pickupRange, 0);
+        foreach (Collider2D col in cols){
+            if(col.gameObject.tag == "xp"){
+                col.gameObject.GetComponent<xpMagnet>().enabled = true;
+            }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col){
+        if (col.gameObject.tag == "xp"){
+            gameObject.GetComponent<PlayerLevelManager>().addXp(col.gameObject.GetComponent<xpMagnet>().getXp());
+            Destroy(col.gameObject);
+        }
     }
 }

@@ -41,6 +41,7 @@ public class EnemyMovement : MonoBehaviour
         if(!isKnockedBack){
             rb.velocity = direction * moveSpeed;
         }else{
+            //rb.AddForce(-direction * kbPower);
             rb.velocity = -direction * kbPower;
             if(Time.time > knockBackTime){
                 isKnockedBack = false;
