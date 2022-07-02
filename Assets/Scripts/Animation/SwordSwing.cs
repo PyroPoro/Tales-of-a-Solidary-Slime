@@ -56,7 +56,7 @@ public class SwordSwing : MonoBehaviour
     }
 
     public void CheckEnemies(){
-        CurrentWeapon.GetComponent<WeaponScript>().DamageEnemies(transform.GetChild(0).position);//transform.parent.position + slashPosOriented
+        CurrentWeapon.GetComponent<WeaponScript>().DamageEnemies(transform.GetChild(0).GetChild(0).position);//transform.parent.position + slashPosOriented
     }
 
     public bool GetIsAttacking(){
