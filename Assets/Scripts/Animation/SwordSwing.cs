@@ -5,24 +5,25 @@ using UnityEngine;
 public class SwordSwing : MonoBehaviour
 {
     private Vector3 slashPosOriented;
-    [SerializeField] private bool isAnimating;
+    private bool isAnimating;
     private bool isAttacking;
     private Animator anim;
     private Animator slashAnim;
+    private Animator playerAnim;
     private GameObject CurrentWeapon;
+    private WeaponScript weapScript;
+    private float atkSpeed;
     public GameObject slash;
     public Vector3 slashPos;
-    private WeaponScript weapScript;
-
     // Start is called before the first frame update
     void Start()
     {
         isAnimating = false;
-        anim = GetComponent<Animator>();
-        slashAnim = slash.GetComponent<Animator>();
         CurrentWeapon = transform.GetChild(0).gameObject;
         slashPos = transform.position-transform.parent.position;
         weapScript = CurrentWeapon.GetComponent<WeaponScript>();
+        anim = GetComponent<Animator>();
+        playerAnim = transform.parent.GetChild(1).gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,6 +31,9 @@ public class SwordSwing : MonoBehaviour
     {
         if (!isAnimating){
             if (Input.GetKey(KeyCode.Mouse0)){
+                atkSpeed = weapScript.atkSpeed * weapScript.atkSpeedX;
+                anim.SetFloat("atkSpeed", atkSpeed);
+                playerAnim.SetFloat("atkSpeed", atkSpeed);
                 anim.Play("SwordSwing");
                 isAnimating = true;
             }
@@ -55,6 +59,8 @@ public class SwordSwing : MonoBehaviour
         GameObject slashObj = Instantiate(slash, transform.parent.position + slashPosOriented, Quaternion.identity, this.transform.parent);
         float size = weapScript.sizeX * weapScript.range;
         slashObj.transform.localScale = new Vector3(size, size, 1);
+        slashAnim = slashObj.GetComponent<Animator>();
+        slashAnim.SetFloat("atkSpeed", atkSpeed);
     }
 
     public void CheckEnemies(){

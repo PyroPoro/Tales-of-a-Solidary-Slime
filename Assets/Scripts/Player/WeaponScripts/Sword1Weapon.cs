@@ -10,7 +10,8 @@ public class Sword1Weapon : WeaponScript
         damage = 25f;
         damageX = 1f;
         range = 0.8f;
-        attackSpeed = 1f;
+        atkSpeed = 1f;
+        atkSpeedX = 1f;
         kbPower = 5f;
         sizeX = 1f;
         kbPowerX = 1f;

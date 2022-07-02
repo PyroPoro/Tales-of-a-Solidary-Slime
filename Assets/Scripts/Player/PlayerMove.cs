@@ -6,6 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float moveSpeed = 5f;
+    public float moveSpeedX = 1f;
     private Vector2 movement;
     public bool facingRight;
     private bool isAttacking;
@@ -37,7 +38,7 @@ public class PlayerMove : MonoBehaviour
 
     }
     void FixedUpdate(){
-        rb.velocity = movement.normalized * moveSpeed;
+        rb.velocity = movement.normalized * moveSpeed * moveSpeedX;
     }
 
     void pickUpXp(){

@@ -36,20 +36,32 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Upgrades\Power2.cs" />
      <Compile Include="Assets\Scripts\Player\WeaponScripts\WeaponScript.cs" />
+     <Compile Include="Assets\Scripts\Upgrades\Force2.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Player\HP\PlayerHealthManager.cs" />
      <Compile Include="Assets\Scripts\Enemies\xpMagnet.cs" />
+     <Compile Include="Assets\Scripts\Player\WeaponScripts\Sword2Weapon.cs" />
+     <Compile Include="Assets\Scripts\Upgrades\Haste1.cs" />
      <Compile Include="Assets\Scripts\Player\HP\HPbar.cs" />
      <Compile Include="Assets\Scripts\Player\WeaponScripts\Sword1Weapon.cs" />
+     <Compile Include="Assets\Scripts\Upgrades\Haste2.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnimationHandler.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerLevelManager.cs" />
+     <Compile Include="Assets\Scripts\Upgrades\UpgradeClass.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyHealthManager.cs" />
      <Compile Include="Assets\Scripts\Enemies\TestEnemy.cs" />
+     <Compile Include="Assets\Scripts\Upgrades\Colossus2.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
+     <Compile Include="Assets\Scripts\Upgrades\Colossus1.cs" />
      <Compile Include="Assets\Scripts\Animation\SwordSlash.cs" />
+     <Compile Include="Assets\Scripts\Upgrades\Force1.cs" />
+     <Compile Include="Assets\Scripts\Upgrades\Power1.cs" />
      <Compile Include="Assets\Scripts\Animation\SwordSwing.cs" />
-     <Compile Include="Assets\Scripts\Player\WeaponScripts\Sword2Weapon.cs" />
+     <Compile Include="Assets\Scripts\UI\UpgradeMenu.cs" />
+     <Compile Include="Assets\Scripts\Upgrades\Flurry1.cs" />
+     <Compile Include="Assets\Scripts\Upgrades\Flurry2.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
