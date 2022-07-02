@@ -12,6 +12,7 @@ public class SwordSwing : MonoBehaviour
     private GameObject CurrentWeapon;
     public GameObject slash;
     public Vector3 slashPos;
+    private WeaponScript weapScript;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class SwordSwing : MonoBehaviour
         slashAnim = slash.GetComponent<Animator>();
         CurrentWeapon = transform.GetChild(0).gameObject;
         slashPos = transform.position-transform.parent.position;
+        weapScript = CurrentWeapon.GetComponent<WeaponScript>();
     }
 
     // Update is called once per frame
@@ -51,12 +53,12 @@ public class SwordSwing : MonoBehaviour
 
     public void PlaySlash(){
         GameObject slashObj = Instantiate(slash, transform.parent.position + slashPosOriented, Quaternion.identity, this.transform.parent);
-        float size = transform.GetChild(0).GetComponent<WeaponScript>().sizeX;
+        float size = weapScript.sizeX * weapScript.range;
         slashObj.transform.localScale = new Vector3(size, size, 1);
     }
 
     public void CheckEnemies(){
-        CurrentWeapon.GetComponent<WeaponScript>().DamageEnemies(transform.GetChild(0).GetChild(0).position);//transform.parent.position + slashPosOriented
+        weapScript.DamageEnemies(transform.GetChild(0).GetChild(0).position);//transform.parent.position + slashPosOriented
     }
 
     public bool GetIsAttacking(){

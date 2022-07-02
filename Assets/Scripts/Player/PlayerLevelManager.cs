@@ -29,6 +29,7 @@ public class PlayerLevelManager : MonoBehaviour
         if (xp >= xpNeededForlevelUp){
             level++;
             xp -= xpNeededForlevelUp;
+            Time.timeScale = 0f;
         }
         levelText.text = level.ToString();
     }
