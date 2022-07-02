@@ -8,14 +8,11 @@ public class Sword1Weapon : WeaponScript
     void Start()
     {
         damage = 25f;
+        damageX = 1f;
         range = 0.8f;
         attackSpeed = 1f;
         kbPower = 5f;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        sizeX = 1f;
+        kbPowerX = 1f;
     }
 }
