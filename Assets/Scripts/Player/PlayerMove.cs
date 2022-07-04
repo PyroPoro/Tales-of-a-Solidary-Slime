@@ -24,7 +24,7 @@ public class PlayerMove : MonoBehaviour
         isAttacking = transform.GetChild(0).GetComponent<SwordSwing>().GetIsAttacking();
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        
+        moveSpeedX = gameObject.GetComponent<PlayerStats>().speed;
         if(!isAttacking){
             if(movement.x < 0){
                 transform.localScale = new Vector3(-1,1,1);

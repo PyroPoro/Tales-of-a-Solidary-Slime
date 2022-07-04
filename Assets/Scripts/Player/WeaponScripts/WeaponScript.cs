@@ -8,12 +8,14 @@ public class WeaponScript : MonoBehaviour
     public float range;
     public float atkSpeed;
     public float kbPower;
-    public Vector3 position;
-    public Vector3 slashPos;
+    public float magic;
     public float sizeX;
     public float damageX;
     public float kbPowerX;
     public float atkSpeedX;
+    public float magicX;
+    public Vector3 position;
+    public Vector3 slashPos;
     void Start()
     {
         

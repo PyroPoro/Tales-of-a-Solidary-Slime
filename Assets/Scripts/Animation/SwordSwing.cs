@@ -64,7 +64,7 @@ public class SwordSwing : MonoBehaviour
     }
 
     public void CheckEnemies(){
-        weapScript.DamageEnemies(transform.GetChild(0).GetChild(0).position);//transform.parent.position + slashPosOriented
+        weapScript.DamageEnemies(transform.GetChild(0).GetChild(0).position);
     }
 
     public bool GetIsAttacking(){

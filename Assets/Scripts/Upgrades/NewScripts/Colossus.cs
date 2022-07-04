@@ -12,9 +12,6 @@ public class Colossus : UpgradeClass
         upgradeNameText = transform.GetChild(1).gameObject.GetComponent<Text>();
         Player = GameObject.FindGameObjectWithTag("Player");
         activeWeapon = Player.transform.GetChild(0).GetChild(0).gameObject.GetComponent<WeaponScript>();
-    }
-
-    void Update(){
         upgradeDescription1 = "Increases Weapon or Projectile Size by ";
         upgradeDescription2 = "%.";
         upgradeDescriptionText.text = upgradeDescription1 + ((int)(upgradeValue * 100)).ToString() + upgradeDescription2;
@@ -22,10 +19,18 @@ public class Colossus : UpgradeClass
         upgradeNameText.text = upgradeName;
     }
 
+    void Update(){
+
+    }
+
     public void applyUpgrade(){
         activeWeapon.sizeX += upgradeValue;
         upgradeValue += 0.1f * upgradeLevel;
         upgradeLevel++;
+        Player.GetComponent<PlayerStats>().colossus++;
+        upgradeDescriptionText.text = upgradeDescription1 + ((int)(upgradeValue * 100)).ToString() + upgradeDescription2;
+        upgradeName = "Colossus " + upgradeLevel.ToString();
+        upgradeNameText.text = upgradeName;
         resumeGame();
     }
 }
