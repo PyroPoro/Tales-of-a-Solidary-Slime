@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UpgradeClass : MonoBehaviour
 {
@@ -8,13 +9,13 @@ public class UpgradeClass : MonoBehaviour
     // public string upgradeName;
     public GameObject Player;
     public WeaponScript activeWeapon;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Player = GameObject.FindGameObjectWithTag("Player");
-        activeWeapon = Player.transform.GetChild(0).GetChild(0).gameObject.GetComponent<WeaponScript>();
-    }
+    public string upgradeDescription1;
+    public string upgradeDescription2;
+    public string upgradeName;
+    public float upgradeValue;
+    public int upgradeLevel;
+    public Text upgradeDescriptionText;
+    public Text upgradeNameText;
 
     public void resumeGame(){
         Time.timeScale = 1;

@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69fdf0981cc0e146a71aecf60ce1b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 100
+  enemyHealth: 1
   xpDrop: {fileID: 1480473874752425106, guid: f1ac756b8ef181946b68e551d36cdecb, type: 3}
   xpDropped: 0
 --- !u!1001 &5643336568121826705

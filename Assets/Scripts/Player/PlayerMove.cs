@@ -35,7 +35,6 @@ public class PlayerMove : MonoBehaviour
             }
         }
         pickUpXp();
-
     }
     void FixedUpdate(){
         rb.velocity = movement.normalized * moveSpeed * moveSpeedX;

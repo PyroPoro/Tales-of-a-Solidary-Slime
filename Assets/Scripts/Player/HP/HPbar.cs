@@ -19,7 +19,7 @@ public class HPbar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hp = player.GetComponent<PlayerHealthManager>().playerHealth;
-        HpBarFill.fillAmount = hp/100;
+        this.hp = player.GetComponent<PlayerStats>().hp;
+        HpBarFill.fillAmount = this.hp/100;
     }
 }
