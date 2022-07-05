@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class Power : UpgradeClass
 {
     void Start(){
-        upgradeValue = 0.1f;
-        upgradeLevel = 1;
         upgradeDescriptionText = transform.GetChild(0).gameObject.GetComponent<Text>();
         upgradeNameText = transform.GetChild(1).gameObject.GetComponent<Text>();
         Player = GameObject.FindGameObjectWithTag("Player");
+        upgradeLevel = Player.GetComponent<PlayerStats>().power;
+        upgradeValue = 0.1f + 0.1f * upgradeLevel;
         activeWeapon = Player.transform.GetChild(0).GetChild(0).gameObject.GetComponent<WeaponScript>();
-        upgradeName = "Power 1";
+        upgradeName = "Power " + (upgradeLevel + 1).ToString();
         upgradeNameText.text = upgradeName;
         upgradeDescription1 = "Increases Damage Dealt by Physical Attacks by ";
         upgradeDescription2 = "%.";
@@ -25,12 +25,7 @@ public class Power : UpgradeClass
 
     public void applyUpgrade(){
         activeWeapon.damageX += upgradeValue;
-        upgradeValue += 0.1f * upgradeLevel;
-        upgradeLevel++;
         Player.GetComponent<PlayerStats>().power++;
-        upgradeName = "Power " + upgradeLevel.ToString();
-        upgradeNameText.text = upgradeName;
-        upgradeDescriptionText.text = upgradeDescription1 + ((int)(upgradeValue * 100)).ToString() + upgradeDescription2;
         resumeGame();
     }
 }

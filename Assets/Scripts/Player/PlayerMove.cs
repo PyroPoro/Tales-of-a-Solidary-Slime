@@ -15,7 +15,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         facingRight = true;
-        pickupRange = 2;
+        pickupRange = 4;
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class PlayerMove : MonoBehaviour
     }
 
     void pickUpXp(){
-        Collider2D[] cols = Physics2D.OverlapBoxAll(transform.position, new Vector2(1,1)*pickupRange, 0);
+        Collider2D[] cols = Physics2D.OverlapCircleAll(transform.position, pickupRange);
         foreach (Collider2D col in cols){
             if(col.gameObject.tag == "xp"){
                 col.gameObject.GetComponent<xpMagnet>().enabled = true;

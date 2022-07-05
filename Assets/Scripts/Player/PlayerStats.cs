@@ -14,6 +14,7 @@ public class PlayerStats : MonoBehaviour
     public int flurry;
     public int force;
     public int colossus;
+    public GameObject UpgradeMenu;
     // Start is called before the first frame update
     void Start()
     {

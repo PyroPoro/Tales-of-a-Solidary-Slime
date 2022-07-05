@@ -43,5 +43,7 @@ public class PlayerLevelManager : MonoBehaviour
 
     public void selectUpgrade(){
         levelUpMenu.SetActive(true);
+        levelUpMenu.GetComponent<RandomizeUpgrades>().resetUpgrades(4);
+        levelUpMenu.GetComponent<RandomizeUpgrades>().randomUpgrades(4);
     }
 }
