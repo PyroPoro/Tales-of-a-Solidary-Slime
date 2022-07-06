@@ -13,10 +13,13 @@ public class RandomizeUpgrades : MonoBehaviour
     public GameObject Haste;
     public GameObject Power;
     public List<GameObject> availableUpgrades;
+    public PlayerStats playerStats;
     // Start is called before the first frame update
     void Start()
     {
         availableUpgrades = new List<GameObject> {Colossus, Enlighten, Flurry, Force, Harden, Haste, Power};
+        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -26,7 +29,8 @@ public class RandomizeUpgrades : MonoBehaviour
     }
 
     public void randomUpgrades(int numUpgrades){
-        List<GameObject> tempList = new List<GameObject> (availableUpgrades);
+        checkAvailability();
+        List<GameObject> tempList = new List<GameObject>(availableUpgrades);
         for (int i = 0; i < numUpgrades; i++){
             int index = Random.Range(0, tempList.Count);
             Instantiate(tempList[index], transform.GetChild(i + 1));
@@ -39,6 +43,30 @@ public class RandomizeUpgrades : MonoBehaviour
             if (transform.GetChild(i+1).childCount > 0){
                 Destroy(transform.GetChild(i+1).GetChild(0).gameObject);
             }
+        }
+    }
+
+    public void checkAvailability(){
+        if (playerStats.colossus == 4){
+            availableUpgrades.Remove(Colossus);
+        }
+        if (playerStats.enlighten == 4){
+            availableUpgrades.Remove(Enlighten);
+        }
+        if (playerStats.flurry == 4){
+            availableUpgrades.Remove(Flurry);
+        }
+        if (playerStats.force == 4){
+            availableUpgrades.Remove(Force);
+        }
+        if (playerStats.harden == 4){
+            availableUpgrades.Remove(Harden);
+        }
+        if (playerStats.haste == 4){
+            availableUpgrades.Remove(Haste);
+        }
+        if (playerStats.power == 4){
+            availableUpgrades.Remove(Power);
         }
     }
 }

@@ -16,6 +16,7 @@ public class Harden : UpgradeClass
         upgradeDescription1 = "Decreases Incoming Damage by ";
         upgradeDescription2 = "%.";
         upgradeDescriptionText.text = upgradeDescription1 + ((int)(upgradeValue * 100)).ToString() + upgradeDescription2;
+        //changeCard();
     }
 
     void Update(){
@@ -25,6 +26,7 @@ public class Harden : UpgradeClass
     public void applyUpgrade(){
         Player.GetComponent<PlayerStats>().def += upgradeValue;
         Player.GetComponent<PlayerStats>().harden++;
+        //changeCard();
         resumeGame();
     }
 }

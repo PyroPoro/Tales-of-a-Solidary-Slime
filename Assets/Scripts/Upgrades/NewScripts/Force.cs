@@ -17,6 +17,7 @@ public class Force : UpgradeClass
         upgradeDescription1 = "Increases Knockback Power by ";
         upgradeDescription2 = "%.";
         upgradeDescriptionText.text = upgradeDescription1 + ((int)(upgradeValue * 100)).ToString() + upgradeDescription2;
+        //changeCard();
     }
 
     void Update(){
@@ -26,6 +27,7 @@ public class Force : UpgradeClass
     public void applyUpgrade(){
         activeWeapon.kbPowerX += upgradeValue;
         Player.GetComponent<PlayerStats>().force++;
+        //changeCard();
         resumeGame();
     }
 }

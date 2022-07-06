@@ -17,6 +17,7 @@ public class Enlighten : UpgradeClass
         upgradeDescription1 = "Increases Damage Dealt by Magic Attacks by ";
         upgradeDescription2 = "%.";
         upgradeDescriptionText.text = upgradeDescription1 + ((int)(upgradeValue * 100)).ToString() + upgradeDescription2;
+        //changeCard();
     }
 
     void Update(){
@@ -26,6 +27,7 @@ public class Enlighten : UpgradeClass
     public void applyUpgrade(){
         activeWeapon.magicX += upgradeValue;
         Player.GetComponent<PlayerStats>().enlighten++;
+        //changeCard();
         resumeGame();
     }
 }

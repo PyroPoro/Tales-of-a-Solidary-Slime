@@ -17,6 +17,7 @@ public class Colossus : UpgradeClass
         upgradeDescription1 = "Increases Weapon or Projectile Size by ";
         upgradeDescription2 = "%.";
         upgradeDescriptionText.text = upgradeDescription1 + ((int)(upgradeValue * 100)).ToString() + upgradeDescription2;
+        //changeCard();
     }
 
     void Update(){
@@ -26,6 +27,7 @@ public class Colossus : UpgradeClass
     public void applyUpgrade(){
         activeWeapon.sizeX += upgradeValue;
         Player.GetComponent<PlayerStats>().colossus++;
+        //changeCard();
         resumeGame();
     }
 }

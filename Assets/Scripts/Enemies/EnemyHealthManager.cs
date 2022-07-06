@@ -11,7 +11,7 @@ public class EnemyHealthManager : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        xpDropped = 1;
+        xpDropped = 3;
     }
 
     // Update is called once per frame

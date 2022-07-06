@@ -16,6 +16,7 @@ public class Haste : UpgradeClass
         upgradeDescription1 = "Increases Movement Speed by ";
         upgradeDescription2 = "%.";
         upgradeDescriptionText.text = upgradeDescription1 + ((int)(upgradeValue * 100)).ToString() + upgradeDescription2;
+        //changeCard();
     }
 
     void Update(){
@@ -25,6 +26,7 @@ public class Haste : UpgradeClass
     public void applyUpgrade(){
         Player.GetComponent<PlayerStats>().speed += upgradeValue;
         Player.GetComponent<PlayerStats>().haste++;
+        //changeCard();
         resumeGame();
     }
 }
