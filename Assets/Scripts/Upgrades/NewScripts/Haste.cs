@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Haste : UpgradeClass
 {
     void Start(){
-        upgradeDescriptionText = transform.GetChild(0).gameObject.GetComponent<Text>();
-        upgradeNameText = transform.GetChild(1).gameObject.GetComponent<Text>();
+        upgradeDescriptionText = transform.GetChild(4).gameObject.GetComponent<Text>();
+        upgradeNameText = transform.GetChild(5).gameObject.GetComponent<Text>();
         Player = GameObject.FindGameObjectWithTag("Player");
         upgradeLevel = Player.GetComponent<PlayerStats>().haste;
         upgradeValue = 0.1f + 0.1f * upgradeLevel;
@@ -16,7 +16,7 @@ public class Haste : UpgradeClass
         upgradeDescription1 = "Increases Movement Speed by ";
         upgradeDescription2 = "%.";
         upgradeDescriptionText.text = upgradeDescription1 + ((int)(upgradeValue * 100)).ToString() + upgradeDescription2;
-        //changeCard();
+        changeCard();
     }
 
     void Update(){
@@ -26,7 +26,7 @@ public class Haste : UpgradeClass
     public void applyUpgrade(){
         Player.GetComponent<PlayerStats>().speed += upgradeValue;
         Player.GetComponent<PlayerStats>().haste++;
-        //changeCard();
+        changeCard();
         resumeGame();
     }
 }

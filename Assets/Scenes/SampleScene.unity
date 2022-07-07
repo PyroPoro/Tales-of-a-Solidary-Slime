@@ -20889,6 +20889,9 @@ MonoBehaviour:
   force: 0
   colossus: 0
   UpgradeMenu: {fileID: 0}
+  weaponClass: 
+  currentClass: 
+  classTier: 0
 --- !u!114 &1050043039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21093,6 +21096,7 @@ MonoBehaviour:
   Harden: {fileID: 8497462465157380680, guid: 32b5c61c47e5d92459795b436928b305, type: 3}
   Haste: {fileID: 305435257739985794, guid: e679fb8e4e2f95c4d8844e2f88a28267, type: 3}
   Power: {fileID: 1375865724920859193, guid: 62431cfb3c97ff24da69fccb2a85d375, type: 3}
+  SwordExpert: {fileID: 2028402282284287224, guid: 065f059c177a56a449063eb247c61017, type: 3}
   availableUpgrades: []
   playerStats: {fileID: 0}
 --- !u!1001 &1091458102
@@ -98442,8 +98446,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -86.7}
-  m_SizeDelta: {x: 1924.092, y: 844.4287}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1461455968
 MonoBehaviour:
@@ -98458,7 +98462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.49803922}
+  m_Color: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 0.57254905}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -98900,8 +98904,8 @@ Transform:
   m_LocalPosition: {x: 0.405, y: 0.109, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 13980352}
   - {fileID: 1515666777}
+  - {fileID: 13980352}
   m_Father: {fileID: 1050043036}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -109840,7 +109844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549538483372102170, guid: 0e0d34e08727cc14787a3bc34b6905d2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4549538483372102245, guid: 0e0d34e08727cc14787a3bc34b6905d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -109872,7 +109876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549538483372102245, guid: 0e0d34e08727cc14787a3bc34b6905d2, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4549538483372102245, guid: 0e0d34e08727cc14787a3bc34b6905d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -109970,7 +109974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6772147704519294674, guid: 64c0bfaec811c6f4bbf443aed7b119ab, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6772147704519294675, guid: 64c0bfaec811c6f4bbf443aed7b119ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -110002,7 +110006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6772147704519294675, guid: 64c0bfaec811c6f4bbf443aed7b119ab, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6772147704519294675, guid: 64c0bfaec811c6f4bbf443aed7b119ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

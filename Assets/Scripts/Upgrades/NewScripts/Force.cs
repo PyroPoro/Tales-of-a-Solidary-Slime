@@ -27,7 +27,7 @@ public class Force : UpgradeClass
     public void applyUpgrade(){
         activeWeapon.kbPowerX += upgradeValue;
         Player.GetComponent<PlayerStats>().force++;
-        //changeCard();
+        changeCard();
         resumeGame();
     }
 }

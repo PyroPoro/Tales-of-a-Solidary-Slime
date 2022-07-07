@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Colossus : UpgradeClass
 {
     void Start(){
-        upgradeDescriptionText = transform.GetChild(0).gameObject.GetComponent<Text>();
-        upgradeNameText = transform.GetChild(1).gameObject.GetComponent<Text>();
+        upgradeDescriptionText = transform.GetChild(4).gameObject.GetComponent<Text>();
+        upgradeNameText = transform.GetChild(5).gameObject.GetComponent<Text>();
         Player = GameObject.FindGameObjectWithTag("Player");
         upgradeLevel = Player.GetComponent<PlayerStats>().colossus;
         upgradeValue = 0.1f + 0.1f * upgradeLevel;
@@ -17,7 +17,7 @@ public class Colossus : UpgradeClass
         upgradeDescription1 = "Increases Weapon or Projectile Size by ";
         upgradeDescription2 = "%.";
         upgradeDescriptionText.text = upgradeDescription1 + ((int)(upgradeValue * 100)).ToString() + upgradeDescription2;
-        //changeCard();
+        changeCard();
     }
 
     void Update(){
@@ -27,7 +27,7 @@ public class Colossus : UpgradeClass
     public void applyUpgrade(){
         activeWeapon.sizeX += upgradeValue;
         Player.GetComponent<PlayerStats>().colossus++;
-        //changeCard();
+        changeCard();
         resumeGame();
     }
 }

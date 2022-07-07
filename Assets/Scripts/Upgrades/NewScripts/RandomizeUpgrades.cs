@@ -12,6 +12,7 @@ public class RandomizeUpgrades : MonoBehaviour
     public GameObject Harden;
     public GameObject Haste;
     public GameObject Power;
+    public GameObject SwordExpert;
     public List<GameObject> availableUpgrades;
     public PlayerStats playerStats;
     // Start is called before the first frame update
@@ -31,10 +32,15 @@ public class RandomizeUpgrades : MonoBehaviour
     public void randomUpgrades(int numUpgrades){
         checkAvailability();
         List<GameObject> tempList = new List<GameObject>(availableUpgrades);
+        List<GameObject> selectedUpgrades = new List<GameObject>();
+        checkClassChanges(selectedUpgrades);
         for (int i = 0; i < numUpgrades; i++){
             int index = Random.Range(0, tempList.Count);
-            Instantiate(tempList[index], transform.GetChild(i + 1));
+            selectedUpgrades.Add(tempList[index]);
             tempList.RemoveAt(index);
+        }
+        for (int i = 0; i < numUpgrades; i++){
+            Instantiate(selectedUpgrades[i], transform.GetChild(i + 1));
         }
     }
 
@@ -67,6 +73,15 @@ public class RandomizeUpgrades : MonoBehaviour
         }
         if (playerStats.power == 4){
             availableUpgrades.Remove(Power);
+        }
+    }
+    public void checkClassChanges(List<GameObject> upgrades){
+        if (playerStats.weaponClass == "sword"){
+            if (playerStats.currentClass == "Sword Slime"){
+                if (playerStats.power >= 2 & playerStats.flurry >= 2){
+                    upgrades.Add(SwordExpert);
+                }
+            }
         }
     }
 }

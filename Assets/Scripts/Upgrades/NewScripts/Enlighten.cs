@@ -27,7 +27,7 @@ public class Enlighten : UpgradeClass
     public void applyUpgrade(){
         activeWeapon.magicX += upgradeValue;
         Player.GetComponent<PlayerStats>().enlighten++;
-        //changeCard();
+        changeCard();
         resumeGame();
     }
 }

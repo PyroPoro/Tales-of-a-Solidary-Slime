@@ -26,7 +26,7 @@ public class Harden : UpgradeClass
     public void applyUpgrade(){
         Player.GetComponent<PlayerStats>().def += upgradeValue;
         Player.GetComponent<PlayerStats>().harden++;
-        //changeCard();
+        changeCard();
         resumeGame();
     }
 }

@@ -15,6 +15,9 @@ public class PlayerStats : MonoBehaviour
     public int force;
     public int colossus;
     public GameObject UpgradeMenu;
+    public string weaponClass;
+    public string currentClass;
+    public int classTier;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,9 @@ public class PlayerStats : MonoBehaviour
         flurry = 0;
         force = 0;
         colossus = 0;
+        weaponClass = "sword";
+        currentClass = "Sword Slime";
+        classTier = 1;
     }
 
     // Update is called once per frame
