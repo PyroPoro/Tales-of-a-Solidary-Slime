@@ -243,6 +243,7 @@ MonoBehaviour:
   upgradeBackground: {fileID: 7059666044683314520}
   available: 0
   upgradeMenu: {fileID: 0}
+  weaponToChangeTo: {fileID: 4549538483372102170, guid: 0e0d34e08727cc14787a3bc34b6905d2, type: 3}
 --- !u!1 &2028402282323468786
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +360,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.00046539, y: 0.0013351}
-  m_SizeDelta: {x: 388.69214, y: 518.3809}
+  m_SizeDelta: {x: 420, y: 540}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1112717649757619247
 CanvasRenderer:

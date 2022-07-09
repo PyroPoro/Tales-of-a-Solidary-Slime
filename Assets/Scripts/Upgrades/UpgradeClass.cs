@@ -24,6 +24,7 @@ public class UpgradeClass : MonoBehaviour
     public GameObject upgradeBackground;
     public bool available;
     public GameObject upgradeMenu;
+    public GameObject weaponToChangeTo;
 
     public void resumeGame(){
         Time.timeScale = 1;

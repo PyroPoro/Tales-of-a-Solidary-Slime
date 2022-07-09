@@ -47,7 +47,9 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 4b505ac0d513bc24c9bd9e81e7a56575, type: 3}
     - {fileID: 2800000, guid: 361a8f376dab4e04ca36ce8fbfdb4343, type: 3}
     - {fileID: 2800000, guid: e0edbd060a1c75a449c5e7d1adb812af, type: 3}
-    totalSpriteSurfaceArea: 37888
+    - {fileID: 2800000, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+    - {fileID: 2800000, guid: 1d64f209289bca84ea50bdeeb5d735c7, type: 3}
+    totalSpriteSurfaceArea: 150997
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -65,6 +67,28 @@ SpriteAtlas:
   - {fileID: -3709441165779244379, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
   - {fileID: 5015909865986748899, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
   - {fileID: 3337650488019329356, guid: d860645362d8d1c45880d94b71c7c5e8, type: 3}
+  - {fileID: -7366180687131401920, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: -14520863135872570, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 2420863537438956345, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 7317334631700292629, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 8296322472478124191, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 5198676504368207085, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 6511404109149442792, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: -6662830832694087935, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: -5130587114860513547, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 5543624403135206190, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: -4308146535040859911, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: -6070888740825547048, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 7395272119062106114, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 2701988108291960151, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: -8504653284088915959, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 6483640522714763778, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: -3212353542367796538, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: -5193340887496955132, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 3216449091635127271, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 2667545021949077527, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 2824267220578268457, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
+  - {fileID: 6604079355047751301, guid: e5af96550bc4e454fa87cac34bd2820c, type: 3}
   - {fileID: 21300000, guid: e0edbd060a1c75a449c5e7d1adb812af, type: 3}
   - {fileID: 21300000, guid: 361a8f376dab4e04ca36ce8fbfdb4343, type: 3}
   - {fileID: 4718298912984582019, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
@@ -81,6 +105,10 @@ SpriteAtlas:
   - {fileID: -8249366509605111322, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
   - {fileID: 8584108449108419463, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
   - {fileID: -7966851374141251545, guid: c8ad966745a558b4ea5d349319980f90, type: 3}
+  - {fileID: -5622750699511858006, guid: 1d64f209289bca84ea50bdeeb5d735c7, type: 3}
+  - {fileID: -929763890636037436, guid: 1d64f209289bca84ea50bdeeb5d735c7, type: 3}
+  - {fileID: 8273323134043516968, guid: 1d64f209289bca84ea50bdeeb5d735c7, type: 3}
+  - {fileID: 807347964912428665, guid: 1d64f209289bca84ea50bdeeb5d735c7, type: 3}
   m_PackedSpriteNamesToIndex:
   - rock_1
   - stone_path_spritesheet_10
@@ -94,6 +122,28 @@ SpriteAtlas:
   - stone_path_spritesheet_7
   - stone_path_spritesheet_8
   - stone_path_spritesheet_9
+  - Walls_7
+  - Walls_6
+  - Walls_5
+  - Walls_4
+  - Walls_3
+  - Walls_9
+  - Walls_8
+  - Walls_13
+  - Walls_10
+  - Walls_11
+  - Walls_16
+  - Walls_17
+  - Walls_14
+  - Walls_15
+  - Walls_18
+  - Walls_19
+  - Walls_25
+  - Walls_24
+  - Walls_23
+  - Walls_22
+  - Walls_21
+  - Walls_20
   - rock_3
   - rock_2
   - grass_spritesheet_9
@@ -110,5 +160,9 @@ SpriteAtlas:
   - grass_spritesheet_13
   - grass_spritesheet_10
   - grass_spritesheet_11
+  - Walls_vertical_pillars 1_5
+  - Walls_vertical_pillars 1_4
+  - Walls_vertical_pillars 1_1
+  - Walls_vertical_pillars 1_0
   m_Tag: GroundTiles
   m_IsVariant: 0

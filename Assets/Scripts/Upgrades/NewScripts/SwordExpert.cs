@@ -10,9 +10,9 @@ public class SwordExpert : UpgradeClass
         upgradeNameText = transform.GetChild(5).gameObject.GetComponent<Text>();
         Player = GameObject.FindGameObjectWithTag("Player");
         activeWeapon = Player.transform.GetChild(0).GetChild(0).gameObject.GetComponent<WeaponScript>();
-        upgradeName = "Sword Expert ";
+        upgradeName = "Sword Expert";
         upgradeNameText.text = upgradeName;
-        upgradeDescription1 = "Changes Class to Sword Expert";
+        upgradeDescription1 = "Changes Class to Sword Expert. \n Seems like size does matter.";
         upgradeDescriptionText.text = upgradeDescription1;
     }
 
@@ -21,8 +21,9 @@ public class SwordExpert : UpgradeClass
     }
 
     public void applyUpgrade(){
-        // activeWeapon.sizeX += upgradeValue;
         Player.GetComponent<PlayerStats>().currentClass = "Sword Expert";
+        Destroy(Player.transform.GetChild(0).GetChild(0).gameObject);
+        Instantiate(weaponToChangeTo, Player.transform.GetChild(0));
         resumeGame();
     }
 }

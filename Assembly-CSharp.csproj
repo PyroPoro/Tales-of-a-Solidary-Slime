@@ -37,19 +37,15 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Upgrades\NewScripts\Harden.cs" />
-     <Compile Include="Assets\Scripts\Upgrades\OldScripts\Power2.cs" />
      <Compile Include="Assets\Scripts\Upgrades\NewScripts\Enlighten.cs" />
      <Compile Include="Assets\Scripts\Player\WeaponScripts\WeaponScript.cs" />
-     <Compile Include="Assets\Scripts\Upgrades\OldScripts\Force2.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Upgrades\NewScripts\Flurry.cs" />
      <Compile Include="Assets\Scripts\Enemies\xpMagnet.cs" />
-     <Compile Include="Assets\Scripts\Upgrades\OldScripts\Flurry2.cs" />
      <Compile Include="Assets\Scripts\Player\WeaponScripts\Sword2Weapon.cs" />
-     <Compile Include="Assets\Scripts\Upgrades\OldScripts\Haste1.cs" />
      <Compile Include="Assets\Scripts\Player\HP\HPbar.cs" />
      <Compile Include="Assets\Scripts\Player\WeaponScripts\Sword1Weapon.cs" />
-     <Compile Include="Assets\Scripts\Upgrades\OldScripts\Haste2.cs" />
+     <Compile Include="Assets\Scripts\Upgrades\NewScripts\SwordExpert.cs" />
      <Compile Include="Assets\Scripts\Upgrades\NewScripts\Force.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnimationHandler.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerLevelManager.cs" />
@@ -58,19 +54,13 @@
      <Compile Include="Assets\Scripts\Enemies\EnemyHealthManager.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\Enemies\TestEnemy.cs" />
-     <Compile Include="Assets\Scripts\Upgrades\OldScripts\Colossus2.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
-     <Compile Include="Assets\Scripts\Upgrades\OldScripts\Colossus1.cs" />
      <Compile Include="Assets\Scripts\Animation\SwordSlash.cs" />
-     <Compile Include="Assets\Scripts\Upgrades\OldScripts\Flurry1.cs" />
      <Compile Include="Assets\Scripts\Upgrades\NewScripts\Power.cs" />
-     <Compile Include="Assets\Scripts\Upgrades\OldScripts\Force1.cs" />
-     <Compile Include="Assets\Scripts\Upgrades\OldScripts\Power1.cs" />
      <Compile Include="Assets\Scripts\Animation\SwordSwing.cs" />
      <Compile Include="Assets\Scripts\UI\UpgradeMenu.cs" />
      <Compile Include="Assets\Scripts\Upgrades\NewScripts\Haste.cs" />
      <Compile Include="Assets\Scripts\Upgrades\NewScripts\Colossus.cs" />
-     <Compile Include="Assets\Scripts\Upgrades\NewScripts\SwordExpert.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

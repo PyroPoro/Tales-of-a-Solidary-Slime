@@ -25,7 +25,7 @@ public class Colossus : UpgradeClass
     }
 
     public void applyUpgrade(){
-        activeWeapon.sizeX += upgradeValue;
+        Player.GetComponent<PlayerStats>().colossusX += upgradeValue;
         Player.GetComponent<PlayerStats>().colossus++;
         changeCard();
         resumeGame();

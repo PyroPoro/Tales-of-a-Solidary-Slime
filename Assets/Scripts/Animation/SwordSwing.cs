@@ -19,9 +19,9 @@ public class SwordSwing : MonoBehaviour
     void Start()
     {
         isAnimating = false;
-        CurrentWeapon = transform.GetChild(0).gameObject;
+        //CurrentWeapon = transform.GetChild(0).gameObject;
         slashPos = transform.position-transform.parent.position;
-        weapScript = CurrentWeapon.GetComponent<WeaponScript>();
+        //weapScript = CurrentWeapon.GetComponent<WeaponScript>();
         anim = GetComponent<Animator>();
         playerAnim = transform.parent.GetChild(1).gameObject.GetComponent<Animator>();
     }
@@ -29,6 +29,8 @@ public class SwordSwing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CurrentWeapon = transform.GetChild(0).gameObject;
+        weapScript = CurrentWeapon.GetComponent<WeaponScript>();
         if (!isAnimating){
             if (Input.GetKey(KeyCode.Mouse0)){
                 atkSpeed = weapScript.atkSpeed * weapScript.atkSpeedX;

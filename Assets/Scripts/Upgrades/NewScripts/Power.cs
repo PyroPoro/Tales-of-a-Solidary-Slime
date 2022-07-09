@@ -25,7 +25,7 @@ public class Power : UpgradeClass
     }
 
     public void applyUpgrade(){
-        activeWeapon.damageX += upgradeValue;
+        Player.GetComponent<PlayerStats>().powerX += upgradeValue;
         Player.GetComponent<PlayerStats>().power++;
         changeCard();
         resumeGame();

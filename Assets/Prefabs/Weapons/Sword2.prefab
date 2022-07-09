@@ -128,10 +128,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 0
   range: 0
-  attackSpeed: 0
+  atkSpeed: 0
   kbPower: 0
-  position: {x: 0, y: 0, z: 0}
-  slashPos: {x: 0, y: 0, z: 0}
+  magic: 0
   sizeX: 0
   damageX: 0
   kbPowerX: 0
+  atkSpeedX: 0
+  magicX: 0
+  position: {x: 0, y: 0, z: 0}
+  slashPos: {x: 0, y: 0, z: 0}

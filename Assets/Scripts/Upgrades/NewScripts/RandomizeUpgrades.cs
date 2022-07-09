@@ -78,7 +78,7 @@ public class RandomizeUpgrades : MonoBehaviour
     public void checkClassChanges(List<GameObject> upgrades){
         if (playerStats.weaponClass == "sword"){
             if (playerStats.currentClass == "Sword Slime"){
-                if (playerStats.power >= 2 & playerStats.flurry >= 2){
+                if (playerStats.power >= 2 & playerStats.colossus >= 2){
                     upgrades.Add(SwordExpert);
                 }
             }

@@ -25,7 +25,7 @@ public class Flurry : UpgradeClass
     }
 
     public void applyUpgrade(){
-        activeWeapon.atkSpeedX += upgradeValue;
+        Player.GetComponent<PlayerStats>().flurryX += upgradeValue;
         Player.GetComponent<PlayerStats>().flurry++;
         changeCard();
         resumeGame();
